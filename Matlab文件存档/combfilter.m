@@ -1,0 +1,12 @@
+a=0.8;
+B=[1,-1];
+A=[1,-a];
+subplot(121);
+zplane(B,A);
+title('零极点分布');
+[Hk,w]=freqz(B,A,1024,'whole');
+subplot(122);
+plot(w/pi,abs(Hk)/max(abs(Hk)));
+xlabel('\omega/\pi');
+axis([0,2,0,1.5]);
+title('幅频特性');

@@ -1,0 +1,13 @@
+Removed Pin From Net: NetName=NetC31_2 Pin=U3-5
+Change Component Comment : Designator=C36 Old Comment=10uF New Comment=104
+Added Component: Designator=BAT1(BATM)
+Added Component: Designator=U6(AMS1117)
+Added Pin To Net: NetName=NetBAT1_1 Pin=BAT1-1
+Added Pin To Net: NetName=GND Pin=BAT1-2
+Added Pin To Net: NetName=NetC31_2 Pin=U3-3
+Added Pin To Net: NetName=NetC32_2 Pin=U3-4
+Added Pin To Net: NetName=NetC33_2 Pin=U3-5
+Added Pin To Net: NetName=NetC34_2 Pin=U3-6
+Added Member To Class: ClassName=MP3 Member=Component BAT1 BATT
+Added Member To Class: ClassName=MP3 Member=Component U6 AMS1117-3.3
+Added Room: Name=MP3

@@ -1,0 +1,16 @@
+map=Map(20);
+V=diag([0.02,0.5*pi/180].^2);
+veh=Vehicle(V);
+veh.add_driver(RandomPath(map.dim));
+W=diag([0.1,1*pi/180]);
+sensor=RangeBearingSensor(veh,map,W);
+P0=diag([0.005,0.005,0.001].^2);
+ekf=EKF(veh,V,P0,sensor,W,map);
+figure(1);
+ekf.run(1000);
+map.plot();
+veh.plot_xy();
+ekf.plot_xy();
+ekf.plot_ellipse([],'g');
+figure(2);
+ekf.plot_P();

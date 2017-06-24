@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?fileVersion 4.0.0?>
+
+<cproject storage_type_id="org.eclipse.cdt.core.XmlProjectDescriptionStorage">
+	<storageModule configRelations="2" moduleId="org.eclipse.cdt.core.settings">
+		<cconfiguration id="com.ti.ccstudio.buildDefinitions.C5400.Debug.821991162">
+			<storageModule buildSystemId="org.eclipse.cdt.managedbuilder.core.configurationDataProvider" id="com.ti.ccstudio.buildDefinitions.C5400.Debug.821991162" moduleId="org.eclipse.cdt.core.settings" name="Debug">
+				<externalSettings/>
+				<extensions>
+					<extension id="com.ti.ccstudio.binaryparser.CoffParser" point="org.eclipse.cdt.core.BinaryParser"/>
+					<extension id="com.ti.ccstudio.errorparser.CoffErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="com.ti.ccstudio.errorparser.LinkErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="com.ti.ccstudio.errorparser.AsmErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+				</extensions>
+			</storageModule>
+			<storageModule moduleId="cdtBuildSystem" version="4.0.0">
+				<configuration artifactExtension="out" artifactName="${ProjName}" buildProperties="" cleanCommand="${CG_CLEAN_CMD}" description="" id="com.ti.ccstudio.buildDefinitions.C5400.Debug.821991162" name="Debug" parent="com.ti.ccstudio.buildDefinitions.C5400.Debug">
+					<folderInfo id="com.ti.ccstudio.buildDefinitions.C5400.Debug.821991162." name="/" resourcePath="">
+						<toolChain id="com.ti.ccstudio.buildDefinitions.C5400_4.2.exe.DebugToolchain.1478046603" name="TI Build Tools" superClass="com.ti.ccstudio.buildDefinitions.C5400_4.2.exe.DebugToolchain" targetTool="com.ti.ccstudio.buildDefinitions.C5400_4.2.exe.linkerDebug.1383082511">
+							<option id="com.ti.ccstudio.buildDefinitions.core.OPT_TAGS.1356979367" superClass="com.ti.ccstudio.buildDefinitions.core.OPT_TAGS" valueType="stringList">
+								<listOptionValue builtIn="false" value="DEVICE_CONFIGURATION_ID=TMS320C54XX.TMS320C5402"/>
+								<listOptionValue builtIn="false" value="OUTPUT_FORMAT=COFF"/>
+								<listOptionValue builtIn="false" value="CCS_MBS_VERSION=5.1.0.01"/>
+								<listOptionValue builtIn="false" value="LINKER_COMMAND_FILE=VC5402.cmd"/>
+								<listOptionValue builtIn="false" value="RUNTIME_SUPPORT_LIBRARY=libc.a"/>
+								<listOptionValue builtIn="false" value="OUTPUT_TYPE=executable"/>
+							</option>
+							<option id="com.ti.ccstudio.buildDefinitions.core.OPT_CODEGEN_VERSION.947980537" name="Compiler version" superClass="com.ti.ccstudio.buildDefinitions.core.OPT_CODEGEN_VERSION" value="4.2.0" valueType="string"/>
+							<targetPlatform id="com.ti.ccstudio.buildDefinitions.C5400_4.2.exe.targetPlatformDebug.1032571153" name="Platform" superClass="com.ti.ccstudio.buildDefinitions.C5400_4.2.exe.targetPlatformDebug"/>
+							<builder buildPath="${BuildDirectory}" id="com.ti.ccstudio.buildDefinitions.C5400_4.2.exe.builderDebug.624071877" keepEnvironmentInBuildfile="false" name="GNU Make" superClass="com.ti.ccstudio.buildDefinitions.C5400_4.2.exe.builderDebug"/>
+							<tool id="com.ti.ccstudio.buildDefinitions.C5400_4.2.exe.compilerDebug.1214234072" name="C5400 Compiler" superClass="com.ti.ccstudio.buildDefinitions.C5400_4.2.exe.compilerDebug">
+								<option id="com.ti.ccstudio.buildDefinitions.C5400_4.2.compilerID.DEFINE.598166482" name="Pre-define NAME (--define, -D)" superClass="com.ti.ccstudio.buildDefinitions.C5400_4.2.compilerID.DEFINE" valueType="definedSymbols">
+									<listOptionValue builtIn="false" value="c5402"/>
+								</option>
+								<option id="com.ti.ccstudio.buildDefinitions.C5400_4.2.compilerID.SILICON_VERSION.881499539" name="Processor version (--silicon_version, -v)" superClass="com.ti.ccstudio.buildDefinitions.C5400_4.2.compilerID.SILICON_VERSION" value="548" valueType="string"/>
+								<option id="com.ti.ccstudio.buildDefinitions.C5400_4.2.compilerID.DEBUGGING_MODEL.275164358" name="Debugging model" superClass="com.ti.ccstudio.buildDefinitions.C5400_4.2.compilerID.DEBUGGING_MODEL" value="com.ti.ccstudio.buildDefinitions.C5400_4.2.compilerID.DEBUGGING_MODEL.SYMDEBUG__DWARF" valueType="enumerated"/>
+								<option id="com.ti.ccstudio.buildDefinitions.C5400_4.2.compilerID.DIAG_WARNING.1309926351" name="Treat diagnostic &lt;id&gt; as warning (--diag_warning, -pdsw)" superClass="com.ti.ccstudio.buildDefinitions.C5400_4.2.compilerID.DIAG_WARNING" valueType="stringList">
+									<listOptionValue builtIn="false" value="225"/>
+								</option>
+								<option id="com.ti.ccstudio.buildDefinitions.C5400_4.2.compilerID.DISPLAY_ERROR_NUMBER.1071027079" name="Emit diagnostic identifier numbers (--display_error_number, -pden)" superClass="com.ti.ccstudio.buildDefinitions.C5400_4.2.compilerID.DISPLAY_ERROR_NUMBER" value="true" valueType="boolean"/>
+								<option id="com.ti.ccstudio.buildDefinitions.C5400_4.2.compilerID.INCLUDE_PATH.1033797460" name="Add dir to #include search path (--include_path, -I)" superClass="com.ti.ccstudio.buildDefinitions.C5400_4.2.compilerID.INCLUDE_PATH" valueType="includePath">
+									<listOptionValue builtIn="false" value="&quot;${CG_TOOL_ROOT}/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;E:\DSP\workspace\Voice_recognition\headerfile&quot;"/>
+								</option>
+								<inputType id="com.ti.ccstudio.buildDefinitions.C5400_4.2.compiler.inputType__C_SRCS.675586856" name="C Sources" superClass="com.ti.ccstudio.buildDefinitions.C5400_4.2.compiler.inputType__C_SRCS"/>
+								<inputType id="com.ti.ccstudio.buildDefinitions.C5400_4.2.compiler.inputType__CPP_SRCS.1506500445" name="C++ Sources" superClass="com.ti.ccstudio.buildDefinitions.C5400_4.2.compiler.inputType__CPP_SRCS"/>
+								<inputType id="com.ti.ccstudio.buildDefinitions.C5400_4.2.compiler.inputType__ASM_SRCS.1411761659" name="Assembly Sources" superClass="com.ti.ccstudio.buildDefinitions.C5400_4.2.compiler.inputType__ASM_SRCS"/>
+								<inputType id="com.ti.ccstudio.buildDefinitions.C5400_4.2.compiler.inputType__ASM2_SRCS.808758366" name="Assembly Sources" superClass="com.ti.ccstudio.buildDefinitions.C5400_4.2.compiler.inputType__ASM2_SRCS"/>
+							</tool>
+							<tool id="com.ti.ccstudio.buildDefinitions.C5400_4.2.exe.linkerDebug.1383082511" name="C5400 Linker" superClass="com.ti.ccstudio.buildDefinitions.C5400_4.2.exe.linkerDebug">
+								<option id="com.ti.ccstudio.buildDefinitions.C5400_4.2.linkerID.STACK_SIZE.1087654098" name="Set C system stack size (--stack_size, -stack)" superClass="com.ti.ccstudio.buildDefinitions.C5400_4.2.linkerID.STACK_SIZE" value="0x200" valueType="string"/>
+								<option id="com.ti.ccstudio.buildDefinitions.C5400_4.2.linkerID.HEAP_SIZE.673081707" name="Specify heap size for C/C++ dynamic memory allocation (--heap_size, -heap)" superClass="com.ti.ccstudio.buildDefinitions.C5400_4.2.linkerID.HEAP_SIZE" value="0x400" valueType="string"/>
+								<option id="com.ti.ccstudio.buildDefinitions.C5400_4.2.linkerID.OUTPUT_FILE.225728314" name="Specify output file name (--output_file, -o)" superClass="com.ti.ccstudio.buildDefinitions.C5400_4.2.linkerID.OUTPUT_FILE" value="&quot;${ProjName}.out&quot;" valueType="string"/>
+								<option id="com.ti.ccstudio.buildDefinitions.C5400_4.2.linkerID.MAP_FILE.1652099760" name="Produce listing of input and output sections in &lt;file&gt; (--map_file, -m)" superClass="com.ti.ccstudio.buildDefinitions.C5400_4.2.linkerID.MAP_FILE" value="&quot;${ProjName}.map&quot;" valueType="string"/>
+								<option id="com.ti.ccstudio.buildDefinitions.C5400_4.2.linkerID.DISPLAY_ERROR_NUMBER.1306052341" name="Emit diagnostic identifier numbers (--display_error_number)" superClass="com.ti.ccstudio.buildDefinitions.C5400_4.2.linkerID.DISPLAY_ERROR_NUMBER" value="true" valueType="boolean"/>
+								<option id="com.ti.ccstudio.buildDefinitions.C5400_4.2.linkerID.SEARCH_PATH.2136488088" name="Add &lt;dir&gt; to library search path (--search_path, -i)" superClass="com.ti.ccstudio.buildDefinitions.C5400_4.2.linkerID.SEARCH_PATH" valueType="stringList">
+									<listOptionValue builtIn="false" value="&quot;${CG_TOOL_ROOT}/lib&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${CG_TOOL_ROOT}/include&quot;"/>
+								</option>
+								<option id="com.ti.ccstudio.buildDefinitions.C5400_4.2.linkerID.LIBRARY.1105901864" name="Include library file or command file as input (--library, -l)" superClass="com.ti.ccstudio.buildDefinitions.C5400_4.2.linkerID.LIBRARY" valueType="libs">
+									<listOptionValue builtIn="false" value="&quot;libc.a&quot;"/>
+								</option>
+								<inputType id="com.ti.ccstudio.buildDefinitions.C5400_4.2.exeLinker.inputType__CMD_SRCS.1288035952" name="Linker Command Files" superClass="com.ti.ccstudio.buildDefinitions.C5400_4.2.exeLinker.inputType__CMD_SRCS"/>
+								<inputType id="com.ti.ccstudio.buildDefinitions.C5400_4.2.exeLinker.inputType__CMD2_SRCS.954233071" name="Linker Command Files" superClass="com.ti.ccstudio.buildDefinitions.C5400_4.2.exeLinker.inputType__CMD2_SRCS"/>
+								<inputType id="com.ti.ccstudio.buildDefinitions.C5400_4.2.exeLinker.inputType__GEN_CMDS.1350976379" name="Generated Linker Command Files" superClass="com.ti.ccstudio.buildDefinitions.C5400_4.2.exeLinker.inputType__GEN_CMDS"/>
+							</tool>
+						</toolChain>
+					</folderInfo>
+				</configuration>
+			</storageModule>
+			<storageModule moduleId="org.eclipse.cdt.core.externalSettings"/>
+		</cconfiguration>
+		<cconfiguration id="com.ti.ccstudio.buildDefinitions.C5400.Release.782680823">
+			<storageModule buildSystemId="org.eclipse.cdt.managedbuilder.core.configurationDataProvider" id="com.ti.ccstudio.buildDefinitions.C5400.Release.782680823" moduleId="org.eclipse.cdt.core.settings" name="Release">
+				<externalSettings/>
+				<extensions>
+					<extension id="com.ti.ccstudio.binaryparser.CoffParser" point="org.eclipse.cdt.core.BinaryParser"/>
+					<extension id="com.ti.ccstudio.errorparser.CoffErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="com.ti.ccstudio.errorparser.LinkErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="com.ti.ccstudio.errorparser.AsmErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+				</extensions>
+			</storageModule>
+			<storageModule moduleId="cdtBuildSystem" version="4.0.0">
+				<configuration artifactExtension="out" artifactName="${ProjName}" buildProperties="" cleanCommand="${CG_CLEAN_CMD}" description="" id="com.ti.ccstudio.buildDefinitions.C5400.Release.782680823" name="Release" parent="com.ti.ccstudio.buildDefinitions.C5400.Release">
+					<folderInfo id="com.ti.ccstudio.buildDefinitions.C5400.Release.782680823." name="/" resourcePath="">
+						<toolChain id="com.ti.ccstudio.buildDefinitions.C5400_4.2.exe.ReleaseToolchain.982172404" name="TI Build Tools" superClass="com.ti.ccstudio.buildDefinitions.C5400_4.2.exe.ReleaseToolchain" targetTool="com.ti.ccstudio.buildDefinitions.C5400_4.2.exe.linkerRelease.279636633">
+							<option id="com.ti.ccstudio.buildDefinitions.core.OPT_TAGS.1548571415" superClass="com.ti.ccstudio.buildDefinitions.core.OPT_TAGS" valueType="stringList">
+								<listOptionValue builtIn="false" value="DEVICE_CONFIGURATION_ID=TMS320C54XX.TMS320C5402"/>
+								<listOptionValue builtIn="false" value="OUTPUT_FORMAT=COFF"/>
+								<listOptionValue builtIn="false" value="CCS_MBS_VERSION=5.1.0.01"/>
+								<listOptionValue builtIn="false" value="LINKER_COMMAND_FILE=VC5402.cmd"/>
+								<listOptionValue builtIn="false" value="RUNTIME_SUPPORT_LIBRARY=libc.a"/>
+								<listOptionValue builtIn="false" value="OUTPUT_TYPE=executable"/>
+							</option>
+							<option id="com.ti.ccstudio.buildDefinitions.core.OPT_CODEGEN_VERSION.737314974" superClass="com.ti.ccstudio.buildDefinitions.core.OPT_CODEGEN_VERSION" value="4.2.0" valueType="string"/>
+							<targetPlatform id="com.ti.ccstudio.buildDefinitions.C5400_4.2.exe.targetPlatformRelease.1887364971" name="Platform" superClass="com.ti.ccstudio.buildDefinitions.C5400_4.2.exe.targetPlatformRelease"/>
+							<builder buildPath="${BuildDirectory}" id="com.ti.ccstudio.buildDefinitions.C5400_4.2.exe.builderRelease.1561170642" name="GNU Make.Release" superClass="com.ti.ccstudio.buildDefinitions.C5400_4.2.exe.builderRelease"/>
+							<tool id="com.ti.ccstudio.buildDefinitions.C5400_4.2.exe.compilerRelease.1177146304" name="C5400 Compiler" superClass="com.ti.ccstudio.buildDefinitions.C5400_4.2.exe.compilerRelease">
+								<option id="com.ti.ccstudio.buildDefinitions.C5400_4.2.compilerID.DEFINE.763754854" superClass="com.ti.ccstudio.buildDefinitions.C5400_4.2.compilerID.DEFINE" valueType="definedSymbols">
+									<listOptionValue builtIn="false" value="c5402"/>
+								</option>
+								<option id="com.ti.ccstudio.buildDefinitions.C5400_4.2.compilerID.SILICON_VERSION.880761115" superClass="com.ti.ccstudio.buildDefinitions.C5400_4.2.compilerID.SILICON_VERSION" value="548" valueType="string"/>
+								<option id="com.ti.ccstudio.buildDefinitions.C5400_4.2.compilerID.DIAG_WARNING.137551682" superClass="com.ti.ccstudio.buildDefinitions.C5400_4.2.compilerID.DIAG_WARNING" valueType="stringList">
+									<listOptionValue builtIn="false" value="225"/>
+								</option>
+								<option id="com.ti.ccstudio.buildDefinitions.C5400_4.2.compilerID.DISPLAY_ERROR_NUMBER.1303913200" superClass="com.ti.ccstudio.buildDefinitions.C5400_4.2.compilerID.DISPLAY_ERROR_NUMBER" value="true" valueType="boolean"/>
+								<option id="com.ti.ccstudio.buildDefinitions.C5400_4.2.compilerID.INCLUDE_PATH.1969878395" superClass="com.ti.ccstudio.buildDefinitions.C5400_4.2.compilerID.INCLUDE_PATH" valueType="includePath">
+									<listOptionValue builtIn="false" value="&quot;${CG_TOOL_ROOT}/include&quot;"/>
+								</option>
+								<inputType id="com.ti.ccstudio.buildDefinitions.C5400_4.2.compiler.inputType__C_SRCS.91000061" name="C Sources" superClass="com.ti.ccstudio.buildDefinitions.C5400_4.2.compiler.inputType__C_SRCS"/>
+								<inputType id="com.ti.ccstudio.buildDefinitions.C5400_4.2.compiler.inputType__CPP_SRCS.1619883804" name="C++ Sources" superClass="com.ti.ccstudio.buildDefinitions.C5400_4.2.compiler.inputType__CPP_SRCS"/>
+								<inputType id="com.ti.ccstudio.buildDefinitions.C5400_4.2.compiler.inputType__ASM_SRCS.1516404739" name="Assembly Sources" superClass="com.ti.ccstudio.buildDefinitions.C5400_4.2.compiler.inputType__ASM_SRCS"/>
+								<inputType id="com.ti.ccstudio.buildDefinitions.C5400_4.2.compiler.inputType__ASM2_SRCS.174762920" name="Assembly Sources" superClass="com.ti.ccstudio.buildDefinitions.C5400_4.2.compiler.inputType__ASM2_SRCS"/>
+							</tool>
+							<tool id="com.ti.ccstudio.buildDefinitions.C5400_4.2.exe.linkerRelease.279636633" name="C5400 Linker" superClass="com.ti.ccstudio.buildDefinitions.C5400_4.2.exe.linkerRelease">
+								<option id="com.ti.ccstudio.buildDefinitions.C5400_4.2.linkerID.STACK_SIZE.492410856" superClass="com.ti.ccstudio.buildDefinitions.C5400_4.2.linkerID.STACK_SIZE" value="0x200" valueType="string"/>
+								<option id="com.ti.ccstudio.buildDefinitions.C5400_4.2.linkerID.HEAP_SIZE.1531027944" superClass="com.ti.ccstudio.buildDefinitions.C5400_4.2.linkerID.HEAP_SIZE" value="0x400" valueType="string"/>
+								<option id="com.ti.ccstudio.buildDefinitions.C5400_4.2.linkerID.OUTPUT_FILE.952059257" superClass="com.ti.ccstudio.buildDefinitions.C5400_4.2.linkerID.OUTPUT_FILE" value="&quot;${ProjName}.out&quot;" valueType="string"/>
+								<option id="com.ti.ccstudio.buildDefinitions.C5400_4.2.linkerID.MAP_FILE.1555696240" superClass="com.ti.ccstudio.buildDefinitions.C5400_4.2.linkerID.MAP_FILE" value="&quot;${ProjName}.map&quot;" valueType="string"/>
+								<option id="com.ti.ccstudio.buildDefinitions.C5400_4.2.linkerID.DISPLAY_ERROR_NUMBER.1197372563" superClass="com.ti.ccstudio.buildDefinitions.C5400_4.2.linkerID.DISPLAY_ERROR_NUMBER" value="true" valueType="boolean"/>
+								<option id="com.ti.ccstudio.buildDefinitions.C5400_4.2.linkerID.SEARCH_PATH.1680203874" superClass="com.ti.ccstudio.buildDefinitions.C5400_4.2.linkerID.SEARCH_PATH" valueType="stringList">
+									<listOptionValue builtIn="false" value="&quot;${CG_TOOL_ROOT}/lib&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${CG_TOOL_ROOT}/include&quot;"/>
+								</option>
+								<option id="com.ti.ccstudio.buildDefinitions.C5400_4.2.linkerID.LIBRARY.899018053" superClass="com.ti.ccstudio.buildDefinitions.C5400_4.2.linkerID.LIBRARY" valueType="libs">
+									<listOptionValue builtIn="false" value="&quot;libc.a&quot;"/>
+								</option>
+								<inputType id="com.ti.ccstudio.buildDefinitions.C5400_4.2.exeLinker.inputType__CMD_SRCS.1245409540" name="Linker Command Files" superClass="com.ti.ccstudio.buildDefinitions.C5400_4.2.exeLinker.inputType__CMD_SRCS"/>
+								<inputType id="com.ti.ccstudio.buildDefinitions.C5400_4.2.exeLinker.inputType__CMD2_SRCS.188079294" name="Linker Command Files" superClass="com.ti.ccstudio.buildDefinitions.C5400_4.2.exeLinker.inputType__CMD2_SRCS"/>
+								<inputType id="com.ti.ccstudio.buildDefinitions.C5400_4.2.exeLinker.inputType__GEN_CMDS.1588664965" name="Generated Linker Command Files" superClass="com.ti.ccstudio.buildDefinitions.C5400_4.2.exeLinker.inputType__GEN_CMDS"/>
+							</tool>
+						</toolChain>
+					</folderInfo>
+				</configuration>
+			</storageModule>
+			<storageModule moduleId="org.eclipse.cdt.core.externalSettings"/>
+		</cconfiguration>
+	</storageModule>
+	<storageModule moduleId="org.eclipse.cdt.core.LanguageSettingsProviders"/>
+	<storageModule moduleId="cdtBuildSystem" version="4.0.0">
+		<project id="voice.com.ti.ccstudio.buildDefinitions.C5400.ProjectType.1522563171" name="C5400" projectType="com.ti.ccstudio.buildDefinitions.C5400.ProjectType"/>
+	</storageModule>
+	<storageModule moduleId="scannerConfiguration"/>
+	<storageModule moduleId="org.eclipse.cdt.core.language.mapping">
+		<project-mappings>
+			<content-type-mapping configuration="" content-type="org.eclipse.cdt.core.asmSource" language="com.ti.ccstudio.core.TIASMLanguage"/>
+			<content-type-mapping configuration="" content-type="org.eclipse.cdt.core.cHeader" language="com.ti.ccstudio.core.TIGCCLanguage"/>
+			<content-type-mapping configuration="" content-type="org.eclipse.cdt.core.cSource" language="com.ti.ccstudio.core.TIGCCLanguage"/>
+			<content-type-mapping configuration="" content-type="org.eclipse.cdt.core.cxxHeader" language="com.ti.ccstudio.core.TIGPPLanguage"/>
+			<content-type-mapping configuration="" content-type="org.eclipse.cdt.core.cxxSource" language="com.ti.ccstudio.core.TIGPPLanguage"/>
+		</project-mappings>
+	</storageModule>
+	<storageModule moduleId="null.endianPreference"/>
+	<storageModule moduleId="cpuFamily"/>
+</cproject>

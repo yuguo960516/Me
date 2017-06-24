@@ -1,0 +1,317 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "S_CKE",
+					"strict" : false
+				},
+				{
+					"name" : "S_NCS",
+					"strict" : false
+				},
+				{
+					"name" : "S_NWE",
+					"strict" : false
+				},
+				{
+					"name" : "S_NCAS",
+					"strict" : false
+				},
+				{
+					"name" : "S_NRAS",
+					"strict" : false
+				},
+				{
+					"name" : "S_BA[0]",
+					"strict" : false
+				},
+				{
+					"name" : "S_BA[1]",
+					"strict" : false
+				},
+				{
+					"name" : "S_A[0]",
+					"strict" : false
+				},
+				{
+					"name" : "S_A[1]",
+					"strict" : false
+				},
+				{
+					"name" : "S_A[2]",
+					"strict" : false
+				},
+				{
+					"name" : "S_A[3]",
+					"strict" : false
+				},
+				{
+					"name" : "S_A[4]",
+					"strict" : false
+				},
+				{
+					"name" : "S_A[5]",
+					"strict" : false
+				},
+				{
+					"name" : "S_A[6]",
+					"strict" : false
+				},
+				{
+					"name" : "S_A[7]",
+					"strict" : false
+				},
+				{
+					"name" : "S_A[8]",
+					"strict" : false
+				},
+				{
+					"name" : "S_A[9]",
+					"strict" : false
+				},
+				{
+					"name" : "S_A[10]",
+					"strict" : false
+				},
+				{
+					"name" : "S_A[11]",
+					"strict" : false
+				},
+				{
+					"name" : "lcd_out_hs",
+					"strict" : false
+				},
+				{
+					"name" : "lcd_out_vs",
+					"strict" : false
+				},
+				{
+					"name" : "lcd_out_de",
+					"strict" : false
+				},
+				{
+					"name" : "lcd_out_rgb_b[0]",
+					"strict" : false
+				},
+				{
+					"name" : "lcd_out_rgb_b[1]",
+					"strict" : false
+				},
+				{
+					"name" : "lcd_out_rgb_b[2]",
+					"strict" : false
+				},
+				{
+					"name" : "lcd_out_rgb_b[3]",
+					"strict" : false
+				},
+				{
+					"name" : "lcd_out_rgb_b[4]",
+					"strict" : false
+				},
+				{
+					"name" : "lcd_out_rgb_b[5]",
+					"strict" : false
+				},
+				{
+					"name" : "lcd_out_rgb_b[6]",
+					"strict" : false
+				},
+				{
+					"name" : "lcd_out_rgb_b[7]",
+					"strict" : false
+				},
+				{
+					"name" : "lcd_out_rgb_g[0]",
+					"strict" : false
+				},
+				{
+					"name" : "lcd_out_rgb_g[1]",
+					"strict" : false
+				},
+				{
+					"name" : "lcd_out_rgb_g[2]",
+					"strict" : false
+				},
+				{
+					"name" : "lcd_out_rgb_g[3]",
+					"strict" : false
+				},
+				{
+					"name" : "lcd_out_rgb_g[4]",
+					"strict" : false
+				},
+				{
+					"name" : "lcd_out_rgb_g[5]",
+					"strict" : false
+				},
+				{
+					"name" : "lcd_out_rgb_g[6]",
+					"strict" : false
+				},
+				{
+					"name" : "lcd_out_rgb_g[7]",
+					"strict" : false
+				},
+				{
+					"name" : "lcd_out_rgb_r[0]",
+					"strict" : false
+				},
+				{
+					"name" : "lcd_out_rgb_r[1]",
+					"strict" : false
+				},
+				{
+					"name" : "lcd_out_rgb_r[2]",
+					"strict" : false
+				},
+				{
+					"name" : "lcd_out_rgb_r[3]",
+					"strict" : false
+				},
+				{
+					"name" : "lcd_out_rgb_r[4]",
+					"strict" : false
+				},
+				{
+					"name" : "lcd_out_rgb_r[5]",
+					"strict" : false
+				},
+				{
+					"name" : "lcd_out_rgb_r[6]",
+					"strict" : false
+				},
+				{
+					"name" : "lcd_out_rgb_r[7]",
+					"strict" : false
+				},
+				{
+					"name" : "CMOS_SCLK",
+					"strict" : false
+				},
+				{
+					"name" : "S_DB[0]",
+					"strict" : false
+				},
+				{
+					"name" : "S_DB[1]",
+					"strict" : false
+				},
+				{
+					"name" : "S_DB[2]",
+					"strict" : false
+				},
+				{
+					"name" : "S_DB[3]",
+					"strict" : false
+				},
+				{
+					"name" : "S_DB[4]",
+					"strict" : false
+				},
+				{
+					"name" : "S_DB[5]",
+					"strict" : false
+				},
+				{
+					"name" : "S_DB[6]",
+					"strict" : false
+				},
+				{
+					"name" : "S_DB[7]",
+					"strict" : false
+				},
+				{
+					"name" : "S_DB[8]",
+					"strict" : false
+				},
+				{
+					"name" : "S_DB[9]",
+					"strict" : false
+				},
+				{
+					"name" : "S_DB[10]",
+					"strict" : false
+				},
+				{
+					"name" : "S_DB[11]",
+					"strict" : false
+				},
+				{
+					"name" : "S_DB[12]",
+					"strict" : false
+				},
+				{
+					"name" : "S_DB[13]",
+					"strict" : false
+				},
+				{
+					"name" : "S_DB[14]",
+					"strict" : false
+				},
+				{
+					"name" : "S_DB[15]",
+					"strict" : false
+				},
+				{
+					"name" : "CMOS_SDAT",
+					"strict" : false
+				},
+				{
+					"name" : "CLOCK",
+					"strict" : false
+				},
+				{
+					"name" : "rst_n",
+					"strict" : false
+				},
+				{
+					"name" : "CMOS_PCLK",
+					"strict" : false
+				},
+				{
+					"name" : "CMOS_DB[0]",
+					"strict" : false
+				},
+				{
+					"name" : "CMOS_HREF",
+					"strict" : false
+				},
+				{
+					"name" : "CMOS_VSYNC",
+					"strict" : false
+				},
+				{
+					"name" : "CMOS_DB[1]",
+					"strict" : false
+				},
+				{
+					"name" : "CMOS_DB[2]",
+					"strict" : false
+				},
+				{
+					"name" : "CMOS_DB[3]",
+					"strict" : false
+				},
+				{
+					"name" : "CMOS_DB[4]",
+					"strict" : false
+				},
+				{
+					"name" : "CMOS_DB[5]",
+					"strict" : false
+				},
+				{
+					"name" : "CMOS_DB[6]",
+					"strict" : false
+				},
+				{
+					"name" : "CMOS_DB[7]",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

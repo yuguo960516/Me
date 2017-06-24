@@ -1,0 +1,37 @@
+/*
+ * exram.c
+ *
+ *  Created on: 2017-6-18
+ *      Author: yuguo
+ */
+#include "exsram.h"
+
+void write_exsram(unsigned int *buf,int length)
+{
+	int i;
+	for(i=0;i<length;i++)
+	{
+		*(ExsramStart+i)=*(buf+i);
+	}
+}
+
+unsigned int *read_exsram(int offset,int length)
+{
+	unsigned int *buf;
+	int i;
+	for(i=0;i<length;i++)
+	{
+		*(buf+i)=*(ExsramStart+offset+i);
+	}
+	return buf;
+}
+
+void clear_exsram()
+{
+	int  i;
+	for(i=0;i<0x8000;i++)
+	{
+		*(ExsramStart+i)=0x0000;
+	}
+}
+

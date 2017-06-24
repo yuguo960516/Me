@@ -1,0 +1,170 @@
+******************************************************************************
+              TMS320C54x Linker PC v4.2.0                      
+******************************************************************************
+>> Linked Sun Jun 18 20:05:42 2017
+
+OUTPUT FILE NAME:   <voice.out>
+ENTRY POINT SYMBOL: "_c_int00"  address: 0000022c
+
+
+MEMORY CONFIGURATION
+
+         name            origin    length      used     unused   attr    fill
+----------------------  --------  ---------  --------  --------  ----  --------
+PAGE 0:
+  RESEVE                00000000   00000080  00000000  00000080  RWIX
+  VECT                  00000080   00000080  00000080  00000000  RWIX
+  PROG1                 00000100   00001200  00000214  00000fec  RWIX
+
+PAGE 1:
+  RESEVE1               00000000   00001300  00000000  00001300  RWIX
+  DARAM2                00001300   00000400  00000200  00000200  RWIX
+  DARAM1                00001700   00002900  000001fd  00002703  RWIX
+
+
+SECTION ALLOCATION MAP
+
+ output                                  attributes/
+section   page    origin      length       input sections
+--------  ----  ----------  ----------   ----------------
+.vectors   0    00000080    00000080     
+                  00000080    00000080     CVECTORS.obj (.vectors)
+
+.text      0    00000100    00000201     
+                  00000100    000000ca     McBSP.obj (.text)
+                  000001ca    00000062     exram.obj (.text)
+                  0000022c    0000004a     rts500.lib : boot.obj (.text)
+                  00000276    00000045     main.obj (.text)
+                  000002bb    00000020     rts500.lib : args_main.obj (.text)
+                  000002db    0000001f                : exit.obj (.text)
+                  000002fa    00000007                : _lock.obj (.text)
+
+.cinit     0    00000301    00000013     
+                  00000301    00000006     exram.obj (.cinit)
+                  00000307    00000006     rts500.lib : _lock.obj (.cinit)
+                  0000030d    00000006                : exit.obj (.cinit)
+                  00000313    00000001     --HOLE-- [fill = 0]
+
+.stack     1    00001300    00000200     UNINITIALIZED
+                  00001300    00000200     --HOLE--
+
+.data      1    00001300    00000000     UNINITIALIZED
+
+.bss       1    00001700    000001fd     UNINITIALIZED
+                  00001700    000001f4     McBSP.obj (.bss)
+                  000018f4    00000003     main.obj (.bss)
+                  000018f7    00000002     exram.obj (.bss)
+                  000018f9    00000002     rts500.lib : _lock.obj (.bss)
+                  000018fb    00000002                : exit.obj (.bss)
+
+
+GLOBAL SYMBOLS: SORTED ALPHABETICALLY BY Name 
+
+address    name
+--------   ----
+00001700   .bss
+00001300   .data
+00000100   .text
+000002db   C$$EXIT
+00001700   _ADbuf
+000018f5   _DA_rptr
+000018f8   _ExsramEnd
+000018f7   _ExsramStart
+0000011b   _McBsp0_init
+00000200   __STACK_SIZE
+ffffffff   ___binit__
+00001700   ___bss__
+ffffffff   ___c_args__
+00000301   ___cinit__
+00001300   ___data__
+00001300   ___edata__
+000018fd   ___end__
+00000301   ___etext__
+ffffffff   ___pinit__
+00000100   ___text__
+000002bb   __args_main
+000018fb   __cleanup_ptr
+000018fc   __dtors_ptr
+00000001   __lflags
+000018f9   __lock
+00000300   __nop
+000002fd   __register_lock
+000002fa   __register_unlock
+000018fa   __unlock
+000002db   _abort
+0000022c   _c_int00
+0000020e   _clear_exsram
+0000018b   _codec_ch0_in
+00000173   _delay
+000002de   _exit
+00000276   _main
+000018f4   _ms
+000018f6   _play_mode
+000001eb   _read_exsram
+00000100   _read_subreg0
+000002a3   _timer0
+000001ca   _write_exsram
+0000010d   _write_subreg0
+ffffffff   binit
+00000301   cinit
+00001300   edata
+000018fd   end
+00000301   etext
+ffffffff   pinit
+
+
+GLOBAL SYMBOLS: SORTED BY Symbol Address 
+
+address    name
+--------   ----
+00000001   __lflags
+00000100   .text
+00000100   ___text__
+00000100   _read_subreg0
+0000010d   _write_subreg0
+0000011b   _McBsp0_init
+00000173   _delay
+0000018b   _codec_ch0_in
+000001ca   _write_exsram
+000001eb   _read_exsram
+00000200   __STACK_SIZE
+0000020e   _clear_exsram
+0000022c   _c_int00
+00000276   _main
+000002a3   _timer0
+000002bb   __args_main
+000002db   C$$EXIT
+000002db   _abort
+000002de   _exit
+000002fa   __register_unlock
+000002fd   __register_lock
+00000300   __nop
+00000301   ___cinit__
+00000301   ___etext__
+00000301   cinit
+00000301   etext
+00001300   .data
+00001300   ___data__
+00001300   ___edata__
+00001300   edata
+00001700   .bss
+00001700   _ADbuf
+00001700   ___bss__
+000018f4   _ms
+000018f5   _DA_rptr
+000018f6   _play_mode
+000018f7   _ExsramStart
+000018f8   _ExsramEnd
+000018f9   __lock
+000018fa   __unlock
+000018fb   __cleanup_ptr
+000018fc   __dtors_ptr
+000018fd   ___end__
+000018fd   end
+ffffffff   ___binit__
+ffffffff   ___c_args__
+ffffffff   ___pinit__
+ffffffff   binit
+ffffffff   pinit
+
+[49 symbols]

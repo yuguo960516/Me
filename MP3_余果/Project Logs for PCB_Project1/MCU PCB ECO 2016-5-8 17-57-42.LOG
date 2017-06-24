@@ -1,0 +1,15 @@
+Change Component Footprint: Designator=F1 Old Footprint=0805 New Footprint=0603P
+Change Component Footprint: Designator=TFTLCD Old Footprint=DB2*17 New Footprint=HDR2X17
+Added Component: Designator=U6(AMS1117)
+Added Pin To Net: NetName=VS XREST Pin=U1-3
+Added Pin To Net: NetName=VS DREQ Pin=U1-8
+Added Pin To Net: NetName=PA8 Pin=U1-23
+Added Pin To Net: NetName=SPI CLK Pin=U1-28
+Added Pin To Net: NetName=SPI MOSI Pin=U1-29
+Added Pin To Net: NetName=SPI MISO Pin=U1-30
+Added Pin To Net: NetName=VS XDCS Pin=U1-13
+Added Net: Name=VS XDCS
+Change Class Name : Old Net Name=MCU New Net Name=MP3
+Added Member To Class: ClassName=MP3 Member=Component U6 AMS1117-3.3
+Change Room Name: Old Name=MCU New Name=MP3
+Change Room Scope: Old Scope=InComponentClass('MCU') New Scope=InComponentClass('MP3')

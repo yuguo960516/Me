@@ -1,0 +1,49 @@
+/****************************************************************************/
+/*  VC5402.cmd                                                              */
+/*  Copyright (c) 2010  Texas Instruments Incorporated                      */
+/*  Author: Rafael de Souza                                                 */
+/*                                                                          */
+/*    Description: This file is a sample linker command file that can be    */
+/*                 used for linking programs built with the C compiler and  */
+/*                 running the resulting .out file on a VC5402.             */
+/*                 Use it as a guideline.  You will want to                 */
+/*                 change the memory layout to match your specific          */
+/*                 target system.  You may want to change the allocation    */
+/*                 scheme according to the size of your program.            */
+/*                                                                          */
+/****************************************************************************/
+
+MEMORY
+{
+    PAGE 0:
+        EXT1:   o = 0x00000  l = 0x00080  /* external or reserved (OVLY=1) */
+        DARAM0: o = 0x00080  l = 0x01F80  /* 8kW external or DARAM0 (OVLY=1) */
+        DARAM1: o = 0x02000  l = 0x02000  /* 8kW external or DARAM1 (OVLY=1) */
+        EXT2:   o = 0x04000  l = 0x0B000  /* external */
+        EXT3:   o = 0x0F000  l = 0x00F00  /* external or ROM (MP/MC=0) */
+        EXT4:   o = 0x0FF00  l = 0x00080  /* external or reserved (MP/MC=0) */
+        VECS:   o = 0x0FF80  l = 0x00080  /* Interrupt vectors */
+    
+    PAGE 1:
+        MMR:    o = 0x00000  l = 0x00060  /* Memory mapped registers */
+        SPRAM:  o = 0x00060  l = 0x00020  /* 32W scratch-pad RAM */
+        DARAM0: o = 0x00080  l = 0x01F80  /* 8kW DARAM0 */
+        DARAM1: o = 0x02000  l = 0x02000  /* 8kW DARAM1 */
+        ERAM1:  o = 0x04000  l = 0x0B000  /* external */
+        ERAM2:  o = 0x0F000  l = 0x00F00  /* external or ROM (DROM=1) */
+        ERAM3:  o = 0x0FF00  l = 0x00100  /* external or reserved (DROM=1) */          
+}
+
+SECTIONS
+{
+       vectors        > DARAM0 PAGE 0
+       coefs          > DARAM1 PAGE 1
+       .text          > DARAM0 PAGE 0
+       .cinit         > DARAM1 PAGE 0
+       .data          > DARAM1 PAGE 1
+       .bss           > DARAM1 PAGE 1
+       .stack         > DARAM0 PAGE 1
+       .const         > DARAM1 PAGE 1
+       .sysmem        > DARAM0 PAGE 1
+       .cio           > DARAM0 PAGE 1
+}

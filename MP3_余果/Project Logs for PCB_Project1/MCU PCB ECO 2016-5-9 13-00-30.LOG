@@ -1,0 +1,7 @@
+Added Component: Designator=BAT1(BATM)
+Added Component: Designator=U6(AMS1117)
+Added Pin To Net: NetName=NetBAT1_1 Pin=BAT1-1
+Added Pin To Net: NetName=GND Pin=BAT1-2
+Added Member To Class: ClassName=MP3 Member=Component BAT1 BATT
+Added Member To Class: ClassName=MP3 Member=Component U6 AMS1117-3.3
+Added Room: Name=MP3

@@ -1,0 +1,17 @@
+
+**** Build of configuration Debug for project mcbsp ****
+
+"C:\\ti\\ccsv5\\utils\\bin\\gmake" -k all 
+'Building file: ../dma.c'
+'Invoking: C5400 Compiler'
+"C:/ti/ccsv5/tools/compiler/c5400_4.2.0/bin/cl500" --define=c5402 --include_path="C:/ti/ccsv5/tools/compiler/c5400_4.2.0/include" --include_path="E:/DSP/workspace/Voice_recognition/headerfile" --symdebug:dwarf --diag_warning=225 --display_error_number --silicon_version=548 --preproc_with_compile --preproc_dependency="dma.pp"  "../dma.c"
+'Finished building: ../dma.c'
+' '
+'Building target: mcbsp.out'
+'Invoking: C5400 Linker'
+"C:/ti/ccsv5/tools/compiler/c5400_4.2.0/bin/cl500" --define=c5402 --symdebug:dwarf --diag_warning=225 --display_error_number --silicon_version=548 -z --reread_libs --display_error_number --warn_sections --search_path="C:/ti/ccsv5/tools/compiler/c5400_4.2.0/lib" --search_path="E:/DSP/workspace/Voice_recognition/headerfile" --search_path="C:/ti/ccsv5/tools/compiler/c5400_4.2.0/include" --map_file="mcbsp.map" --rom_model --heap_size=0x400 --stack_size=0x200 -o "mcbsp.out"  "./main.obj" "./dma.obj" "./McBSP.obj" "./CVECTORS.obj" --library="libc.a" "../VC5402.cmd" 
+<Linking>
+'Finished building target: mcbsp.out'
+' '
+
+**** Build Finished ****

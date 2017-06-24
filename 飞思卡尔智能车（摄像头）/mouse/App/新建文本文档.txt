@@ -1,0 +1,62 @@
+ // 由进到远  横向  扫描边线，每次扫描中点反馈到下一行扫描起始点//
+ //          求中线     中线重写入数据 8                      //
+//                     标注行数 、 中线列数       //
+     void scan_line()
+     {
+ 
+//        uint32 img_x;
+
+        uint8  img_m=CAMERA_W/2;
+        uint8 Left_Black,Left_Black_Old=0,Right_Black,Right_Black_Old=CAMERA_W-1;
+        
+        
+        
+        for(img_h=CAMERA_H-1;img_h>0;img_h--)   //扫描行
+        {
+     for(img_w=img_m;img_w>1;img_w--)  // 从中间向左边搜索，寻找黑点
+     {
+       if(img[img_h][img_w+1]==1 && img[img_h][img_w]==1 && img[img_h][img_w-1]==0 && img[img_h][img_w-1]==0)
+       {
+         left_line[img_h]=img_w;
+         Left_Black=img_w;    
+         Left_Black_Old=Left_Black; 
+         break;
+       }
+       else
+       {
+         Left_Black=0;  // 未找到左边黑点
+         left_line[img_h]=0;
+       }
+     }
+
+     for(img_w=img_m;img_w<CAMERA_W-2;img_w++)          // 从中间向右边搜索，寻找黑点
+     {
+       if(img[img_h][img_w-1]==1 && img[img_h][img_w]==1 && img[img_h][img_w+1]==0 && img[img_h][img_w+2]==0)
+       {
+         right_line[img_h]=img_w;
+         Right_Black=img_w;         
+         Right_Black_Old=Right_Black;
+         break;
+          
+       }
+       else
+       {
+         Right_Black=CAMERA_W-1;   //未找到右边黑点
+         right_line[img_h]=CAMERA_W-1;
+       }
+     }
+     
+     if(Left_Black==0 && Right_Black==CAMERA_W-1)    //图像丢失
+     {                                      
+       Left_Black=Left_Black_Old;
+       Right_Black=Right_Black_Old;
+        
+     }
+     
+     
+       img_m = (Left_Black + Right_Black)/2;
+       medium_line[img_h]=img_m;
+       img[img_h][img_m]=8;
+        }
+
+     } 

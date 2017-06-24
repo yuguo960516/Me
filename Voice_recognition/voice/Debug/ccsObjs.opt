@@ -1,0 +1,1 @@
+"./main.obj" "./exram.obj" "./McBSP.obj" "./CVECTORS.obj" --library="libc.a" "../INRAM.cmd" 

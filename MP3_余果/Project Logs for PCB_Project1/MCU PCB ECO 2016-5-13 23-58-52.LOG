@@ -1,0 +1,17 @@
+Added Component: Designator=kEY0(KEY_M)
+Added Component: Designator=KEY1(KEY_M)
+Added Pin To Net: NetName=VCC Pin=kEY0-1
+Added Pin To Net: NetName=VCC Pin=kEY0-1
+Added Pin To Net: NetName=VCC Pin=KEY1-1
+Added Pin To Net: NetName=VCC Pin=KEY1-1
+Added Pin To Net: NetName=KEY0 Pin=kEY0-2
+Added Pin To Net: NetName=KEY0 Pin=kEY0-2
+Added Pin To Net: NetName=KEY0 Pin=U3-53
+Added Net: Name=KEY0
+Added Pin To Net: NetName=KEY1 Pin=KEY1-2
+Added Pin To Net: NetName=KEY1 Pin=KEY1-2
+Added Pin To Net: NetName=KEY1 Pin=U3-52
+Added Net: Name=KEY1
+Added Member To Class: ClassName=MP3 Member=Component kEY0 KEY_M
+Added Member To Class: ClassName=MP3 Member=Component KEY1 KEY_M
+Added Room: Name=MP3

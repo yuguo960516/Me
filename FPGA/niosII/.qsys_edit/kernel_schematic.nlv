@@ -1,0 +1,20 @@
+# # File gsaved with Nlview version 6.3.8  2013-12-19 bk=1.2992 VDI=34 GEI=35
+# 
+preplace inst kernel.sdram -pg 1 -lvl 3 -y 210
+preplace inst kernel.nios2.reset_bridge -pg 1
+preplace inst kernel.sysid -pg 1 -lvl 3 -y 30
+preplace inst kernel.jtag_uart -pg 1 -lvl 3 -y 110
+preplace inst kernel.clk -pg 1 -lvl 1 -y 290
+preplace inst kernel.nios2.clock_bridge -pg 1
+preplace inst kernel.nios2 -pg 1 -lvl 2 -y 100
+preplace inst kernel -pg 1 -lvl 1 -y 40 -regy -20
+preplace inst kernel.nios2.cpu -pg 1
+preplace netloc FAN_OUT<net_container>kernel</net_container>(SLAVE)sysid.clk,(SLAVE)jtag_uart.clk,(SLAVE)nios2.clk,(MASTER)clk.clk,(SLAVE)sdram.clk) 1 1 2 260 40 700
+preplace netloc INTERCONNECT<net_container>kernel</net_container>(MASTER)nios2.instruction_master,(MASTER)nios2.data_master,(SLAVE)sdram.s1,(SLAVE)jtag_uart.avalon_jtag_slave,(SLAVE)sysid.control_slave,(SLAVE)nios2.debug_mem_slave) 1 1 2 280 60 640
+preplace netloc EXPORT<net_container>kernel</net_container>(SLAVE)kernel.sdram,(SLAVE)sdram.wire) 1 0 3 NJ 280 NJ 280 NJ
+preplace netloc POINT_TO_POINT<net_container>kernel</net_container>(SLAVE)jtag_uart.irq,(MASTER)nios2.irq) 1 2 1 680
+preplace netloc EXPORT<net_container>kernel</net_container>(SLAVE)kernel.clk,(SLAVE)clk.clk_in) 1 0 1 NJ
+preplace netloc INTERCONNECT<net_container>kernel</net_container>(SLAVE)sdram.reset,(SLAVE)jtag_uart.reset,(SLAVE)sysid.reset,(SLAVE)nios2.reset,(MASTER)nios2.debug_reset_request,(MASTER)clk.clk_reset) 1 1 2 280 240 660
+preplace netloc EXPORT<net_container>kernel</net_container>(SLAVE)kernel.reset,(SLAVE)clk.clk_in_reset) 1 0 1 NJ
+levelinfo -pg 1 0 50 880
+levelinfo -hier kernel 60 90 400 730 870

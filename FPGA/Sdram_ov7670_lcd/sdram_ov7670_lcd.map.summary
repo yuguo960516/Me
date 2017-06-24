@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Wed Jun 21 10:35:22 2017
+Quartus Prime Version : 16.1.0 Build 196 10/24/2016 SJ Lite Edition
+Revision Name : sdram_ov7670_lcd
+Top-level Entity Name : sdram_ov7670_lcd
+Family : Cyclone IV E
+Total logic elements : 1,132
+    Total combinational functions : 988
+    Dedicated logic registers : 503
+Total registers : 503
+Total pins : 87
+Total virtual pins : 0
+Total memory bits : 16,384
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 1
